@@ -7,7 +7,7 @@ A wrapper script to automate periodic downloading of many urls using [svtplay-dl
 ```bash
 Usage: svtplay-dl-bulk.sh -i <yaml_file> [-e <extra_options>]
   -i <yaml_file>      Specify the YAML file containing key-value pairs
-  -e <extra_options>  Extra options to pass to the dockerized command
+  -e <extra_options>  Extra options to pass to svtplay-dl
   -h                  Print this help message
 ```
 

@@ -3,7 +3,7 @@
 print_help() {
   echo "Usage: $0 -i <yaml_file> [-e <extra_options>]"
   echo "  -i <yaml_file>      Specify the YAML file containing key-value pairs"
-  echo "  -e <extra_options>  Extra options to pass to the dockerized command"
+  echo "  -e <extra_options>  Extra options to pass to svtplay-dl"
   echo "  -h                  Print this help message"
   exit 1
 }
