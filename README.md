@@ -1,6 +1,6 @@
 # svtplay-dl-bulk
 
-A script to automate periodic downloading of many urls.
+A wrapper script to automate periodic downloading of many urls using [svtplay-dl](https://svtplay-dl.se/).
 
 # Usage
 
