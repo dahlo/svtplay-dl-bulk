@@ -34,12 +34,14 @@ if [ ! -f "$yaml_file" ]; then
 fi
 
 # Read the YAML file and loop over key-value pairs
-grep -v '^#' "$yaml_file" | while IFS=':' read -r key value; do
+# skipping comments and empty lines
+grep -v '^#' "$yaml_file" | grep -v "^$" | while IFS=':' read -r key value; do
   # Trim leading/trailing spaces from key and value
   key=$(echo "$key" | xargs)
   value=$(echo "$value" | xargs)
 
   # Change directory to the local path
+  mkdir -p "$key" || exit 1
   cd "$key" || exit 1
 
   # Build the docker command
